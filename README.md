@@ -35,24 +35,13 @@ The detailed training logs:
 ```
 3. Train and evaluate the model. All the training scripts are located in the `scripts` directory.
    
-   **Long-term forecasting:**
-   
    For Linux/macOS:
-```bash
-    sh ./scripts/LongForecasting/PCFNet.sh
-```
+    ```bash
+    sh ./scripts/PCFNet.sh
+    sh ./scripts/PCFNet.sh
+    ```
     For Windows:
-```bash
-    ./scripts/LongForecasting/PCFNet.bat
-```
-   
-   **Short-term forecasting:**
-   
-   For Linux/macOS:
-```bash
-    sh ./scripts/ShortForecasting/PCFNet.sh
-```
-    For Windows:
-```bash
-    ./scripts/ShortForecasting/PCFNet.bat
-```
+    ```
+    ./scripts/PCFNet.bat
+    ```
+
