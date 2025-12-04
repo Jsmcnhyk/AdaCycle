@@ -37,11 +37,12 @@ The detailed training logs:
    
    For Linux/macOS:
     ```bash
-    sh ./scripts/PCFNet.sh
-    sh ./scripts/PCFNet.sh
+    sh scripts/LongForecasting/AdaCycle.sh
+    sh scripts/ShortForecasting/AdaCycle.sh
     ```
     For Windows:
     ```
-    ./scripts/PCFNet.bat
+    scripts/LongForecasting/AdaCycle.bat
+    scripts/ShortForecasting/AdaCycle.bat
     ```
 
