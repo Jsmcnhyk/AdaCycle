@@ -3,7 +3,7 @@ AdaCycle: Global Statistical Adaptive Multi-Cycle Detection and Fusion with Hete
 
 
 ## Updates
-The detailed training logs (see [_logs](logs/LongForecasting/PCFNet)).
+The detailed training logs (see [_logs](logs/LongForecasting/AdaCycle)).
 
 ## Usage
 
