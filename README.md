@@ -1,19 +1,18 @@
+# AdaCycle
+AdaCycle: Global Statistical Adaptive Multi-Cycle Detection and Fusion with Heterogeneous Wavelet Decomposition for time series forecasting
+
 ## Updates
-The detailed training logs are organized into:
-- **Long-term forecasting logs**: see [`_logs/LongForecasting/AdaCycle`](logs/LongForecasting/AdaCycle)
-- **Short-term forecasting logs**: see [`_logs/ShortForecasting/AdaCycle`](logs/ShortForecasting/AdaCycle)
+The detailed training logs:
+- Long-term forecasting: [logs/LongForecasting/AdaCycle](logs/LongForecasting/AdaCycle)
+- Short-term forecasting: [logs/ShortForecasting/AdaCycle](logs/ShortForecasting/AdaCycle)
 
 ## Usage
-
 1. Install the dependencies
-    ```bash
+```bash
     pip install -r requirements.txt
-    ```
-
-2. Obtain the dataset from [Google Drive](https://drive.google.com/file/d/1l51QsKvQPcqILT3DwfjCgx8Dsg2rpjot/view?usp=drive_link) and extract it to the root directory of the project.  
-   Make sure the extracted folder is named `dataset` and has the following structure:
-
-    ```
+```
+2. Obtain the dataset from [Google Drive](https://drive.google.com/file/d/1l51QsKvQPcqILT3DwfjCgx8Dsg2rpjot/view?usp=drive_link) and extract it to the root directory of the project. Make sure the extracted folder is named `dataset` and has the following structure:
+```
     dataset
     ├── electricity
     │   └── electricity.csv
@@ -26,32 +25,34 @@ The detailed training logs are organized into:
     │   ├── PEMS03.npz
     │   ├── PEMS04.npz
     │   ├── PEMS07.npz
-    │   └── PEMS08.csv
+    │   └── PEMS08.npz
     ├── Solar
     │   └── solar_AL.txt
     ├── traffic
     │   └── traffic.csv
     └── weather
         └── weather.csv
-    ```
-
+```
 3. Train and evaluate the model. All the training scripts are located in the `scripts` directory.
-
-### **Long-term forecasting**
-For Linux/macOS:
+   
+   **Long-term forecasting:**
+   
+   For Linux/macOS:
 ```bash
-sh ./scripts/LongForecasting/AdaCycle.sh
-
-For Windows:
+    sh ./scripts/LongForecasting/PCFNet.sh
+```
+    For Windows:
 ```bash
-sh ./scripts/LongForecasting/AdaCycle.sh
-
-
-### **Short-term forecasting**
-For Linux/macOS:
+    ./scripts/LongForecasting/PCFNet.bat
+```
+   
+   **Short-term forecasting:**
+   
+   For Linux/macOS:
 ```bash
-sh ./scripts/LongForecasting/AdaCycle.sh
-
-For Windows:
+    sh ./scripts/ShortForecasting/PCFNet.sh
+```
+    For Windows:
 ```bash
-sh ./scripts/LongForecasting/AdaCycle.sh
+    ./scripts/ShortForecasting/PCFNet.bat
+```
