@@ -1,0 +1,54 @@
+Args in experiment:
+Namespace(random_seed=2025, enable_visual=True, save_model=False, max_cycles=10, attn_dropout=0.15, wv='db1', kernel_size=None, m=3, is_training=1, model_id='ETTh1_96_192', model='AdaCycle', data='ETTh1', root_path='D:\\work\\datasets\\all_datasets\\/ETT-small/', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='./checkpoints/', seq_len=96, label_len=0, pred_len=192, cycle=0, use_revin=1, alpha=0.35, embed_type=0, enc_in=7, d_model=128, n_heads=8, d_ff=None, dropout=0.1, embed='timeF', activation='gelu', num_workers=0, itr=1, train_epochs=20, batch_size=64, patience=3, learning_rate=0.0009, des='test', loss='mse', lradj='type1', pct_start=0.3, use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0,1', inverse=False)
+Use GPU: cuda:0
+train 8353
+val 2689
+test 2689
+>>>>>>>start training : ETTh1_96_192_AdaCycle_ETTh1_ftM_sl96_pl192_bz64_lr0.0009_ljtype1_al0.35_dm128_dp0.1_tk10_wvdb1_m3_dfNone_itr1>>>>>>>>>>>>>>>>>>>>>>>>>>
+	iters: 100, epoch: 1 | loss: 1.9874830
+	speed: 0.0260s/iter; left time: 65.0538s
+Epoch: 1 cost time: 2.5295050144195557
+Epoch: 1, Steps: 130 | Train Loss: 2.0303633 Vali Loss: 2.5270920 Test Loss: 0.4240992
+Validation loss decreased (inf --> 2.527092).  Saving model ...
+Updating learning rate to 0.0009
+	iters: 100, epoch: 2 | loss: 1.8320901
+	speed: 0.0275s/iter; left time: 65.2498s
+Epoch: 2 cost time: 2.2800960540771484
+Epoch: 2, Steps: 130 | Train Loss: 1.9150777 Vali Loss: 2.5265524 Test Loss: 0.4191189
+Validation loss decreased (2.527092 --> 2.526552).  Saving model ...
+Updating learning rate to 0.00045
+	iters: 100, epoch: 3 | loss: 1.8792981
+	speed: 0.0273s/iter; left time: 61.1688s
+Epoch: 3 cost time: 2.2661685943603516
+Epoch: 3, Steps: 130 | Train Loss: 1.8825986 Vali Loss: 2.5093197 Test Loss: 0.4119592
+Validation loss decreased (2.526552 --> 2.509320).  Saving model ...
+Updating learning rate to 0.000225
+	iters: 100, epoch: 4 | loss: 1.7797050
+	speed: 0.0282s/iter; left time: 59.5823s
+Epoch: 4 cost time: 2.364487409591675
+Epoch: 4, Steps: 130 | Train Loss: 1.8656034 Vali Loss: 2.5024404 Test Loss: 0.4106463
+Validation loss decreased (2.509320 --> 2.502440).  Saving model ...
+Updating learning rate to 0.0001125
+	iters: 100, epoch: 5 | loss: 1.9280034
+	speed: 0.0277s/iter; left time: 54.8049s
+Epoch: 5 cost time: 2.2752809524536133
+Epoch: 5, Steps: 130 | Train Loss: 1.8546879 Vali Loss: 2.5056114 Test Loss: 0.4101997
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 5.625e-05
+	iters: 100, epoch: 6 | loss: 1.7938888
+	speed: 0.0272s/iter; left time: 50.3424s
+Epoch: 6 cost time: 2.277141571044922
+Epoch: 6, Steps: 130 | Train Loss: 1.8496164 Vali Loss: 2.5060153 Test Loss: 0.4093168
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 2.8125e-05
+	iters: 100, epoch: 7 | loss: 1.8001623
+	speed: 0.0271s/iter; left time: 46.5909s
+Epoch: 7 cost time: 2.2424349784851074
+Epoch: 7, Steps: 130 | Train Loss: 1.8465361 Vali Loss: 2.5047941 Test Loss: 0.4090923
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_96_192_AdaCycle_ETTh1_ftM_sl96_pl192_bz64_lr0.0009_ljtype1_al0.35_dm128_dp0.1_tk10_wvdb1_m3_dfNone_itr1<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2689
+test shape: (2689, 192, 7) (2689, 192, 7)
+test shape: (2689, 192, 7) (2689, 192, 7)
+mse:0.41064634919166565, mae:0.4178478419780731, rmse:0.6408169269561768, mape:0.6863644123077393

@@ -1,0 +1,112 @@
+Args in experiment:
+Namespace(random_seed=2025, enable_visual=True, save_model=False, max_cycles=10, attn_dropout=0.15, wv='db4', kernel_size=None, m=1, is_training=1, model_id='PEMS08_96_12', model='AdaCycle', data='PEMS', root_path='D:\\work\\datasets\\all_datasets\\PEMS/', data_path='PEMS08.npz', features='M', target='OT', freq='h', checkpoints='./checkpoints/', seq_len=96, label_len=0, pred_len=12, cycle=0, use_revin=1, alpha=0.0, embed_type=0, enc_in=170, d_model=256, n_heads=8, d_ff=None, dropout=0.1, embed='timeF', activation='gelu', num_workers=0, itr=1, train_epochs=10, batch_size=32, patience=3, learning_rate=0.0018, des='test', loss='mse', lradj='type1', pct_start=0.3, use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0,1', inverse=False)
+Use GPU: cuda:0
+train 10606
+val 3560
+test 3560
+>>>>>>>start training : PEMS08_96_12_AdaCycle_PEMS_ftM_sl96_pl12_bz32_lr0.0018_ljtype1_al0.0_dm256_dp0.1_tk10_wvdb4_m1_dfNone_itr1>>>>>>>>>>>>>>>>>>>>>>>>>>
+	iters: 100, epoch: 1 | loss: 0.2150163
+	speed: 0.0261s/iter; left time: 83.8626s
+	iters: 200, epoch: 1 | loss: 0.1889678
+	speed: 0.0174s/iter; left time: 54.2061s
+	iters: 300, epoch: 1 | loss: 0.1915055
+	speed: 0.0203s/iter; left time: 61.0607s
+Epoch: 1 cost time: 6.549069404602051
+Epoch: 1, Steps: 331 | Train Loss: 0.2364558 Vali Loss: 0.1959389 Test Loss: 0.0856862
+Validation loss decreased (inf --> 0.195939).  Saving model ...
+Updating learning rate to 0.0018
+	iters: 100, epoch: 2 | loss: 0.1790160
+	speed: 0.0497s/iter; left time: 142.9994s
+	iters: 200, epoch: 2 | loss: 0.1827018
+	speed: 0.0246s/iter; left time: 68.5241s
+	iters: 300, epoch: 2 | loss: 0.1734228
+	speed: 0.0246s/iter; left time: 65.9057s
+Epoch: 2 cost time: 8.129307746887207
+Epoch: 2, Steps: 331 | Train Loss: 0.1817497 Vali Loss: 0.1829556 Test Loss: 0.0775007
+Validation loss decreased (0.195939 --> 0.182956).  Saving model ...
+Updating learning rate to 0.0009
+	iters: 100, epoch: 3 | loss: 0.1687821
+	speed: 0.0497s/iter; left time: 126.6538s
+	iters: 200, epoch: 3 | loss: 0.1688907
+	speed: 0.0246s/iter; left time: 60.2575s
+	iters: 300, epoch: 3 | loss: 0.1675803
+	speed: 0.0246s/iter; left time: 57.6971s
+Epoch: 3 cost time: 8.138463497161865
+Epoch: 3, Steps: 331 | Train Loss: 0.1679827 Vali Loss: 0.1813555 Test Loss: 0.0767535
+Validation loss decreased (0.182956 --> 0.181355).  Saving model ...
+Updating learning rate to 0.00045
+	iters: 100, epoch: 4 | loss: 0.1671586
+	speed: 0.0499s/iter; left time: 110.6784s
+	iters: 200, epoch: 4 | loss: 0.1554791
+	speed: 0.0244s/iter; left time: 51.7419s
+	iters: 300, epoch: 4 | loss: 0.1604465
+	speed: 0.0244s/iter; left time: 49.3159s
+Epoch: 4 cost time: 8.118346452713013
+Epoch: 4, Steps: 331 | Train Loss: 0.1622630 Vali Loss: 0.1724123 Test Loss: 0.0711678
+Validation loss decreased (0.181355 --> 0.172412).  Saving model ...
+Updating learning rate to 0.000225
+	iters: 100, epoch: 5 | loss: 0.1601230
+	speed: 0.0495s/iter; left time: 93.3616s
+	iters: 200, epoch: 5 | loss: 0.1597439
+	speed: 0.0247s/iter; left time: 44.2196s
+	iters: 300, epoch: 5 | loss: 0.1567619
+	speed: 0.0243s/iter; left time: 41.0249s
+Epoch: 5 cost time: 8.096350908279419
+Epoch: 5, Steps: 331 | Train Loss: 0.1591278 Vali Loss: 0.1696650 Test Loss: 0.0699231
+Validation loss decreased (0.172412 --> 0.169665).  Saving model ...
+Updating learning rate to 0.0001125
+	iters: 100, epoch: 6 | loss: 0.1488034
+	speed: 0.0496s/iter; left time: 77.1508s
+	iters: 200, epoch: 6 | loss: 0.1562752
+	speed: 0.0244s/iter; left time: 35.5471s
+	iters: 300, epoch: 6 | loss: 0.1593161
+	speed: 0.0245s/iter; left time: 33.1924s
+Epoch: 6 cost time: 8.10208010673523
+Epoch: 6, Steps: 331 | Train Loss: 0.1575568 Vali Loss: 0.1686011 Test Loss: 0.0698023
+Validation loss decreased (0.169665 --> 0.168601).  Saving model ...
+Updating learning rate to 5.625e-05
+	iters: 100, epoch: 7 | loss: 0.1477110
+	speed: 0.0498s/iter; left time: 61.0154s
+	iters: 200, epoch: 7 | loss: 0.1518731
+	speed: 0.0246s/iter; left time: 27.6415s
+	iters: 300, epoch: 7 | loss: 0.1587187
+	speed: 0.0255s/iter; left time: 26.0966s
+Epoch: 7 cost time: 8.358536005020142
+Epoch: 7, Steps: 331 | Train Loss: 0.1567374 Vali Loss: 0.1682183 Test Loss: 0.0695026
+Validation loss decreased (0.168601 --> 0.168218).  Saving model ...
+Updating learning rate to 2.8125e-05
+	iters: 100, epoch: 8 | loss: 0.1537998
+	speed: 0.0555s/iter; left time: 49.5977s
+	iters: 200, epoch: 8 | loss: 0.1495975
+	speed: 0.0288s/iter; left time: 22.8809s
+	iters: 300, epoch: 8 | loss: 0.1616868
+	speed: 0.0293s/iter; left time: 20.3279s
+Epoch: 8 cost time: 9.533675193786621
+Epoch: 8, Steps: 331 | Train Loss: 0.1563123 Vali Loss: 0.1679717 Test Loss: 0.0694513
+Validation loss decreased (0.168218 --> 0.167972).  Saving model ...
+Updating learning rate to 1.40625e-05
+	iters: 100, epoch: 9 | loss: 0.1542386
+	speed: 0.0510s/iter; left time: 28.6933s
+	iters: 200, epoch: 9 | loss: 0.1506441
+	speed: 0.0250s/iter; left time: 11.5880s
+	iters: 300, epoch: 9 | loss: 0.1587213
+	speed: 0.0249s/iter; left time: 9.0222s
+Epoch: 9 cost time: 8.24647045135498
+Epoch: 9, Steps: 331 | Train Loss: 0.1560613 Vali Loss: 0.1678963 Test Loss: 0.0694539
+Validation loss decreased (0.167972 --> 0.167896).  Saving model ...
+Updating learning rate to 7.03125e-06
+	iters: 100, epoch: 10 | loss: 0.1566453
+	speed: 0.0500s/iter; left time: 11.5930s
+	iters: 200, epoch: 10 | loss: 0.1440378
+	speed: 0.0248s/iter; left time: 3.2757s
+	iters: 300, epoch: 10 | loss: 0.1626594
+	speed: 0.0249s/iter; left time: 0.7964s
+Epoch: 10 cost time: 8.212898254394531
+Epoch: 10, Steps: 331 | Train Loss: 0.1559282 Vali Loss: 0.1677108 Test Loss: 0.0693995
+Validation loss decreased (0.167896 --> 0.167711).  Saving model ...
+Updating learning rate to 3.515625e-06
+>>>>>>>testing : PEMS08_96_12_AdaCycle_PEMS_ftM_sl96_pl12_bz32_lr0.0018_ljtype1_al0.0_dm256_dp0.1_tk10_wvdb4_m1_dfNone_itr1<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 3560
+test shape: (3560, 12, 170) (3560, 12, 170)
+test shape: (3560, 12, 170) (3560, 12, 170)
+mse:604.1060180664062, mae:15.150009155273438, rmse:24.578567504882812, mape:0.0938868448138237
