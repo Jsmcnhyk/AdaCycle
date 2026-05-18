@@ -46,3 +46,19 @@ The detailed training logs:
     scripts/ShortForecasting/AdaCycle.bat
     ```
 
+## Bibtex
+If you find this work useful, please consider citing it:
+ ```
+@article{DU2026104480,
+title = {AdaCycle: Global statistical adaptive multi-cycle detection and fusion with heterogeneous wavelet decomposition for time series forecasting},
+journal = {Information Fusion},
+volume = {135},
+pages = {104480},
+year = {2026},
+issn = {1566-2535},
+doi = {https://doi.org/10.1016/j.inffus.2026.104480},
+url = {https://www.sciencedirect.com/science/article/pii/S1566253526003593},
+author = {Jinze Du and Songmao Jiang},
+}
+ ```
+
